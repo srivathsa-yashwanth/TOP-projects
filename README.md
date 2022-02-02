@@ -5,3 +5,6 @@ In this repository I will be building the projects as they are assigned in The O
 
 <h3>2. Landing Page</h3>
 <p>A static webpage with UI elements. Made using CSS flexboxes.</p>
+
+<h3>3. Rock Paper Scissors</h3>
+<p>Play Rock Paper Scissors on the dev console, written with basic JavaScript. </p>
