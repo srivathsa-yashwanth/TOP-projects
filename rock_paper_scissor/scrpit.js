@@ -42,25 +42,39 @@ function playRound(player,computer)
         loser = "player";
     }
 
+    output = document.querySelector('#output');
+
 
     if (winner == 'player')
     {
-        console.log(`You win! ${player} beats ${computer}.`);
+        output.textContent = `You win! ${player} beats ${computer}.`;
         score_p++;
     }
 
     else if (winner == 'tie')
     {
-        console.log('It\'s a draw!');
+        output.textContent = 'It\'s a draw!';
     }
 
     else
     {
-        console.log(`You lose! ${computer} beats ${player}.`) ;
+        output.textContent = `You lose! ${computer} beats ${player}.` ;
         score_c++;
     }
 
+    const scoreText = `Scores: Player - ${score_p}  and Computer - ${score_c}`;
+
+    scoreOut = document.querySelector('#scores');
+    scoreOut.textContent = scoreText;
+
+    if (score_p >= 5 || score_c >= 5 )
+    {
+        final();
+    }
+
 }
+let score_p, score_c ;
+score_p = score_c = 0;
 
 b_r = document.querySelector('#rock');
 b_p = document.querySelector('#paper');
@@ -70,36 +84,36 @@ b_r.addEventListener('click', () => {playRound('rock',computerPlay())});
 b_p.addEventListener('click',()=>{playRound('paper',computerPlay());});
 b_s.addEventListener('click', ()=> {playRound('scissor',computerPlay());});
 
-let score_p, score_c ;
-score_p = score_c = 0;
 
-function game()
+
+function final()
 {
-    let i = 0;
 
-    let session, winner;
-    while (score_p < 5 && score_c < 5 )
-    {     
-        playRound(player,computerPlay());
-    }
-
-    console.log(`Final Scores: Player - ${score_p}  and Computer - ${score_c}`);
+    
+    
     let message;
     if (score_p > score_c) 
     {
-        message = "Congrats! You Won!!";
+        message = "\nCongrats! You Won!!";
     }
     else if (score_p < score_c)
     {
-        message = "The Machines Reign Supreme :( ";
+        message = "\nThe Machines Reign Supreme :( ";
     }
     else
     {
-        message = "The game is a draw. Play another.";
+        message = "\nThe game is a draw. Play another.";
     }
 
-    console.log(message);
+    out = document.querySelector('#final');
+    out.textContent = message;
+
+    //score_p = score_c = 0;
+    
+
 }
 
-
-game();
+function removed(e)
+{
+    console.log(e);
+}
