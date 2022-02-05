@@ -42,68 +42,45 @@ function playRound(player,computer)
         loser = "player";
     }
 
+
     if (winner == 'player')
     {
-        return [`You win! ${player} beats ${computer}.`,winner];
+        console.log(`You win! ${player} beats ${computer}.`);
+        score_p++;
     }
 
     else if (winner == 'tie')
     {
-        return ['It\'s a draw!',winner];
+        console.log('It\'s a draw!');
     }
 
     else
     {
-        return [`You lose! ${computer} beats ${player}.`, winner];
+        console.log(`You lose! ${computer} beats ${player}.`) ;
+        score_c++;
     }
 
 }
 
-function getPlayer()
-{
-    let choice = prompt("Enter your choice (r/p/s): ");
-    let out;
-    switch (choice)
-    {
-        case "r":
-            out = 'rock';
-            break;
-        case "p":
-            out = 'paper';
-            break;
-        case "s":
-            out = 'scissor';
-            break;
-        default:
-            console.log("invalid input. try again.");
-            out = getPlayer();
-    }
+b_r = document.querySelector('#rock');
+b_p = document.querySelector('#paper');
+b_s = document.querySelector('#scissor');
 
-    return out;
+b_r.addEventListener('click', () => {playRound('rock',computerPlay())});
+b_p.addEventListener('click',()=>{playRound('paper',computerPlay());});
+b_s.addEventListener('click', ()=> {playRound('scissor',computerPlay());});
 
-}
+let score_p, score_c ;
+score_p = score_c = 0;
 
-function game(count)
+function game()
 {
     let i = 0;
-    let score_p, score_c ;
-    score_p = score_c = 0;
-    let session, winner;
-    for (i;i<count;i++)
-    {
-        player = getPlayer();
-        [session, winner] = playRound(player,computerPlay());
-        console.log(session);
-        switch (winner)
-        {
-            case "player":
-                score_p++;
-                break;
-            case "computer":
-                score_c++;
-                break;
-        }
 
+    let session, winner;
+    while (score_p < 5 && score_c < 5 )
+    {     
+        playRound(player,computerPlay());
     }
 
     console.log(`Final Scores: Player - ${score_p}  and Computer - ${score_c}`);
@@ -124,5 +101,5 @@ function game(count)
     console.log(message);
 }
 
-let count = 5;
-game(count);
+
+game();
