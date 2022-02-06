@@ -1,9 +1,55 @@
-
-#inputs
+html
 {
-    display:flex;
+    font-size: 20px;
+    background: url(background.png);
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    display: flex;
     justify-content: center;
     align-items: center;
-    flex:1;
+    flex-direction: column;
+    margin-top: 50px;
+}
 
+button{
+    margin: 50px;
+    width: 200px;
+    height: 150px;
+    border-radius: 10%;
+    background-color: rgb(46, 133, 209);
+    font-size: 36px;
+    font-family: 'Montserrat',sans-serif;
+    box-shadow: 100px;
+    border-color: aqua ;
+
+    
+}
+
+#ui
+{
+    display:flex;
+    font-size: 30px;
+}
+
+.text{
+    color:azure;
+}
+
+#outs{
+    display: flex;
+    justify-content: center;
+    
+}
+
+p{
+    margin: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.supertext{
+    font-size:32px;
+    color: rgba(234, 238, 13, 0.815);
 }
