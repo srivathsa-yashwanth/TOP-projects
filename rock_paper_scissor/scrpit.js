@@ -62,10 +62,8 @@ function playRound(player,computer)
         score_c++;
     }
 
-    const scoreText = `Scores: Player - ${score_p}  and Computer - ${score_c}`;
-
-    scoreOut = document.querySelector('#scores');
-    scoreOut.textContent = scoreText;
+    p_score.textContent = `Player Score: ${score_p}`;
+    c_score.textContent = `Computer Score: ${score_c}`;
 
     if (score_p >= 5 || score_c >= 5 )
     {
@@ -85,6 +83,8 @@ b_p.addEventListener('click',()=>{playRound('paper',computerPlay());});
 b_s.addEventListener('click', ()=> {playRound('scissor',computerPlay());});
 
 
+p_score = document.querySelector('#player-score')
+c_score = document.querySelector('#computer-score')
 
 function final()
 {
@@ -94,26 +94,22 @@ function final()
     let message;
     if (score_p > score_c) 
     {
-        message = "\nCongrats! You Won!!";
+        message = "Congrats! You Won!!";
     }
     else if (score_p < score_c)
     {
-        message = "\nThe Machines Reign Supreme :( ";
+        message = "The Machines Reign Supreme :( ";
     }
     else
     {
-        message = "\nThe game is a draw. Play another.";
+        message = "The game is a draw. Play another.";
     }
 
-    out = document.querySelector('#final');
-    out.textContent = message;
-
-    //score_p = score_c = 0;
     
+    output.textContent = message;
 
-}
+    b_r.disabled = true;
+    b_p.disabled = true;
+    b_s.disabled = true;
 
-function removed(e)
-{
-    console.log(e);
 }
