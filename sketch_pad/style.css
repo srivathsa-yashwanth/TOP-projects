@@ -1,0 +1,46 @@
+html{
+    background-color: rgb(181, 123, 235);
+}
+
+#grids{
+     background-color:rgb(150, 168, 115); 
+    
+    height: 700px;
+    width: 700px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+div{
+    box-sizing: border-box;
+    
+}
+
+.cell{
+    
+    box-sizing: border-box;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:21.875px;
+    width: 21.875px;
+    background-color: white;
+
+p}
+
+button{
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    flex:1;
+}
