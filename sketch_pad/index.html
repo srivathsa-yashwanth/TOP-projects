@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+        </style>
     <title>Sketch Pad</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
@@ -9,8 +12,12 @@
 <body>
     <div id="left-pane">
         <button id="clr">Clear</button>
-        <input type="range" min="8" max="64" value="16" class="slider" id="size">
-        <button id="rgb">RGB</button>
+        <label for="size">Pixels</label>
+        <input type="range" min="8" max="64" value="32" class="slider" id="size" name="size">
+        
+        <button id="rgb" value="RGB">RGB</button>
+
+          
     </div>
     <div id="grids">
 

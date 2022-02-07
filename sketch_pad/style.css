@@ -1,5 +1,5 @@
 html{
-    background-color: rgb(181, 123, 235);
+    background-color: rgb(167, 168, 168);
 }
 
 #grids{
@@ -16,7 +16,7 @@ html{
 
 body{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     
 }
@@ -36,11 +36,46 @@ div{
     width: 21.875px;
     background-color: white;
 
-p}
+}
 
-button{
+button
+{
+    margin: 20px;
+    padding: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    align-content: center;
+    background-color: rgb(255, 181, 121);
+    color:rgb(0, 0, 0);
+    border-radius: 10px;
+    border-width: 2px;
+    
+}
+
+
+
+#left-pane
+{
+    /* background-color: brown; */
     display: flex;
-    flex-basis: 100%;
     flex-direction: column;
-    flex:1;
+    align-items: center;
+    justify-content: center;
+    margin-right:150px;
+    margin-left:200px;
+   
+}
+
+#rgb
+{
+    background-color: rgb(108, 179, 27);
+    color: black;
+}
+
+label{
+    font-size: 20px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 300;
+    color:rgb(255, 255, 255);
 }
