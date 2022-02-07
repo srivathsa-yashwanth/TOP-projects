@@ -7,4 +7,7 @@ In this repository I will be building the projects as they are assigned in The O
 <p>A static webpage with UI elements. Made using CSS flexboxes.</p>
 
 <h3>3. Rock Paper Scissors</h3>
-<p>Play Rock Paper Scissors on the dev console, written with basic JavaScript. </p>
+<p>Play Rock Paper Scissors on the browser, written with basic JavaScript. </p>
+
+<h3>4. Sketch Pad </h3>
+<p>HTML and JS based sketch book - complete with the RGB mode for extra 'color'. </p>
