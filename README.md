@@ -13,4 +13,4 @@ In this repository I will be building the projects as they are assigned in The O
 <p>HTML and JS based sketch book - complete with the RGB mode for extra 'color'. </p>
 
 <h3>5. Calculator</h3>
-<p>A basic digital calculator built on vanilla JS with User Interface.</p>
+<p>A basic digital calculator built on basic JS with User Interface.</p>
