@@ -1,5 +1,7 @@
 In this repository I will be building the projects as they are assigned in The Odin Project.
 
+<h1>Foundations</h1>
+
 <h3>1. Recipe Book</h3>
 <p>A simple barebones HTML recipe book that houses links to various pages containing various recipes.</p>
 
@@ -14,3 +16,7 @@ In this repository I will be building the projects as they are assigned in The O
 
 <h3>5. Calculator</h3>
 <p>A basic digital calculator built on basic JS with User Interface.</p>
+
+<h1>Intermediate HTML and CSS </h1>
+
+<h3>1. Sign-up Form</h3>
