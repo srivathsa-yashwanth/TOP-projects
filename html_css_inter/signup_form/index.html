@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='script.js'></script>
+</head>
+<body>
+    <div id="whole">
+        <div id='left'>
+            <div id="logo">
+                <img src="assets/cat-logo.png" alt="cat-logo">
+                <div id='logo_text'>Cat Book</div>
+            </div>
+        </div>
+        <div id="right">
+            <div id="right_up">
+                <p style="font-size:32px;">Social Media Is Not Just For Humans !</p>  <br>
+                Your cat also likes to socialize with other cats and share with them 
+                their fun and exciting moments. <br><br>
+                Give your cat the good life! Join the <em><strong>Cat Book</strong></em> -
+                The new and exclusive social media platform just for your loved cats. 
+                <br><br>
+                JOIN NOW! ^_^
+            </div>
+            <div id="right_mid">
+                <form action="#">
+                    <div class='form_input'>
+                        <label for="name_person">Your Name</label>
+                        <input id='name_person' type="text">
+                    </div>    
+
+                    <div class='form_input'>
+                        <label for="name_cat">Cat Name</label>
+                        <input id='name_cat' type="text">
+                    </div>
+
+                    <div class='form_input'>
+                        <label for="email">Email</label>
+                        <input id="email" type="email">
+                    </div>
+                    <div class='form_input'>
+    
+                        <label for="ph_num">Phone Number</label>
+                        <input id="ph_num" type="tel">
+                    </div>
+
+                    <div class='form_input'>
+                        <label for="pw1">Password</label>
+                        <input id='pw1' type="password">
+                        <span id='error'></span>
+                    </div>
+
+                    <div class='form_input'>
+                        <label for="pw2">Confirm Password</label>
+                        <input id='pw2' type="password">
+                    </div>
+                </form>
+            </div>
+            <div id="right_down">
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
