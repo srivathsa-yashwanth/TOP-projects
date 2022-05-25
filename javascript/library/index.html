@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='script.js' defer></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600&family=Satisfy&display=swap');
+        </style>
+
+</head>
+<body>
+    <div id="header">
+        <div id="title">Library</div>
+        <div id="add-button">
+            <button id='add-book'>Add a Book</button>
+        </div>
+    </div>
+    <div id="add-form">
+        <form  id="book-form">
+            <h3>Add New Book</h3>
+            <div class="form-ele">
+                <label for="b-title">Title</label>
+                <input id='b-title' type="text" name="title"></div>
+            <div class="form-ele">
+                <label for="b-author">Author</label>
+                <input id='b-author' type="text" name='author'></div>
+            <div class="form-ele">
+                <label for="b-pages">Pages</label>
+                <input id='b-pages' type="text" name='pages'></div>
+            <button id="book-submit">Submit</button>
+            <button id="book-close">x</button>
+
+        </form>
+    </div>
+    <div id="screen">
+    </div>
+</body>
+</html>

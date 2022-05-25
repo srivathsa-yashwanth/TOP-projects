@@ -20,7 +20,4 @@ In this repository I will be building the projects as they are assigned in The O
 <h1>Intermediate HTML and CSS </h1>
 
 <h3>1. Sign-up Form</h3>
-<p>A basic signup page for a small website using html forms.</p>
-
-<h3>2. Admin Dashboard</h3>
-<p>A design for a dashboard on a website predominantly made using css grids.</p>
+<p>A basic signup page for a small website using html forms.</p>on a website predominantly made using css grids.</p>
