@@ -1,0 +1,84 @@
+
+
+
+body{
+    margin: 0px;
+}
+
+
+#whole{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(150, 224, 200, 0.534);
+    
+}
+
+#topbar{
+
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+}
+
+#tiles{
+    display: grid;
+    grid-template-rows: repeat(3, 200px);
+    grid-template-columns: repeat(3,200px);
+    gap:2px;
+    background-color: white;
+    border:2px solid white;
+}
+
+.tile{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    font-size:150px;
+    background-color: rgb(238, 156, 170);
+    caret-color: transparent;
+    
+}
+
+#winner-window{
+    background-color: rgba(91, 195, 236, 1);
+    position:fixed;
+    box-sizing: border-box;
+    height:30vh;
+    width:30vw;
+    border-radius: 12px;
+    padding:20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 2px 2px;
+}
+
+#replay-button{
+    height:6vh;
+    width: 12vw;
+    border-radius: 10px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    background-color: rgb(201, 211, 224);
+    border:2px solid rgb(1, 13, 17);
+    box-shadow: 1px 1px;
+}
+
+#winner-text{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 25px;
+}
+
+#winner-text > em {
+    font-size: 35px;
+    margin:8px;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+}
