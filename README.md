@@ -30,3 +30,7 @@ In this repository I will be building the projects as they are assigned in The O
 
 <h3>1. Library </h3>
 <p>A library webpage to track the books being read. Made using javascript objects and grid.</p>
+
+<h3>2. Tic Tac Toe </h3>
+<p>Tic Tac Toe on a webpage running on vanilla JS. In this project OOP concepts like factory functions, modules 
+    and closures were used. </p>
