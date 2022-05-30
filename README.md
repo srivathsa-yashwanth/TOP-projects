@@ -34,3 +34,6 @@ In this repository I will be building the projects as they are assigned in The O
 <h3>2. Tic Tac Toe </h3>
 <p>Tic Tac Toe on a webpage running on vanilla JS. In this project OOP concepts like factory functions, modules 
     and closures were used. </p>
+
+<h3>3. Restuarant Page </h3>
+<p> An intro and purchase webpage for a restaurant made using the npm and webpack,
