@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tasks</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><script defer src="index.bundle.js"></script><script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+    </style>
+  <body>
+      <div id="whole">
+          <div id="header">
+                Tasks
+          </div>
+
+          <div id="sidebar">
+              <button id="add_new_project">Add New</button>
+              
+                <form id="add_new_project_form">
+                    <input type="text" placeholder="Project Title" id='project_input_title' value="first">
+                    <input type="text" placeholder="Description" id="project_input_descr" value="of many">
+                    <input type="date" id="project_input_deadline" value="2023-02-12">
+                    <button type="button" id="project_form_submit">Add Project</button>
+                    <button id="project_form_close">X</button>
+                </form>
+
+            <form id="add_new_task_form">
+                <input type="text" placeholder="Task Title" id='task_input_title' value='yash'>
+                <input type="text" placeholder="Description" id="task_input_descr"value='yash' >
+                <input type="text" placeholder="Status" id="task_input_status" value='yash'>
+                <input type="text" placeholder="Starred" id="task_input_starred" value='yash'>
+                <button type="button" id="task_form_submit">Add Task</button>
+                <button id="task_form_close">X</button>
+            </form>   
+
+          </div>
+
+          <div id="projects">
+            
+
+            
+          </div>
+
+      </div>
+  </body>
+</html>

@@ -36,4 +36,8 @@ In this repository I will be building the projects as they are assigned in The O
     and closures were used. </p>
 
 <h3>3. Restuarant Page </h3>
-<p> An intro and purchase webpage for a restaurant made using the npm and webpack,
+<p> An intro and purchase webpage for a restaurant made using the npm and webpack.</p>
+
+<h3>4. To-Do List</h3>
+<p> A to do list to seamlessly track and update your tasks and projects. Made using webpack and OOP principles. There's some room for improvement.
+</p>
