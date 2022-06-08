@@ -41,3 +41,8 @@ In this repository I will be building the projects as they are assigned in The O
 <h3>4. To-Do List</h3>
 <p> A to do list to seamlessly track and update your tasks and projects. Made using webpack and OOP principles. There's some room for improvement.
 </p>
+
+<h3>5. Weather</h3>
+<p> A webpage that displays weather data from a weather API for a requested area. Made use of JS asynchornous functions and API calls.
+</p>
+
