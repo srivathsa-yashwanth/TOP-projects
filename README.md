@@ -61,3 +61,6 @@ In this repository I will be building the projects as they are assigned in The O
 <p> A webpage that displays weather data from a weather API for a requested area. Made use of JS asynchornous functions and API calls.
 </p>
 
+<h3>6. Testing with Jest</h3>
+<p> Practised test driven development through the Jest module.
+</p>
