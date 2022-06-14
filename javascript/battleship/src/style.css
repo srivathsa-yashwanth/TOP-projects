@@ -1,0 +1,30 @@
+
+
+.cell{
+    background-color: aqua;
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+}
+
+.board{
+    display: grid;
+    grid-template-rows: repeat(10,1fr);
+    grid-template-columns: repeat(10,1fr);
+    
+}
+
+#screen{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hit{
+    background-color: red;
+}
+
+.miss{
+    background-color: darkorange;
+}

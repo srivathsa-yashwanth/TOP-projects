@@ -64,3 +64,7 @@ In this repository I will be building the projects as they are assigned in The O
 <h3>6. Testing with Jest</h3>
 <p> Practised test driven development through the Jest module.
 </p>
+
+<h3>7. Battleship Game</h3>
+<p> A turn based game where you have to sink all of the enemy ships by clicking their tiles. Its built with the TDD approach. Various other tools like webpack, jest, eslint, babel(for converting import syntax into commonjs syntax) etc. were also used.
+</p>
