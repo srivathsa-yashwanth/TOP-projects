@@ -68,3 +68,7 @@ In this repository I will be building the projects as they are assigned in The O
 <h3>7. Battleship Game</h3>
 <p> A turn based game where you have to sink all of the enemy ships by clicking their tiles. Its built with the TDD approach. Various other tools like webpack, jest, eslint, babel(for converting import syntax into commonjs syntax) etc. were also used.
 </p>
+
+<h3>8. Resume Maker</h3>
+<p> A resume making website built on React. Enter your details and generate a classy resume in pdf format.
+</p>
