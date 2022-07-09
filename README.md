@@ -29,8 +29,6 @@ In this repository I will be building the projects as they are assigned in The O
 <h1>Javascript</h1>
 
 <h3>1. Library </h3>
-
-<h3>1. Library </h3>
 <p>A library webpage to track the books being read. Made using javascript objects and grid.</p>
 
 <h3>2. Tic Tac Toe </h3>
@@ -46,20 +44,6 @@ In this repository I will be building the projects as they are assigned in The O
 
 <h3>5. Weather</h3>
 <p> A webpage that displays weather
-<h3>2. Tic Tac Toe </h3>
-<p>Tic Tac Toe on a webpage running on vanilla JS. In this project OOP concepts like factory functions, modules 
-    and closures were used. </p>
-
-<h3>3. Restuarant Page </h3>
-<p> An intro and purchase webpage for a restaurant made using the npm and webpack.</p>
-
-<h3>4. To-Do List</h3>
-<p> A to do list to seamlessly track and update your tasks and projects. Made using webpack and OOP principles. There's some room for improvement.
-</p>
-
-<h3>5. Weather</h3>
-<p> A webpage that displays weather data from a weather API for a requested area. Made use of JS asynchornous functions and API calls.
-</p>
 
 <h3>6. Testing with Jest</h3>
 <p> Practised test driven development through the Jest module.
