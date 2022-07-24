@@ -56,3 +56,7 @@ In this repository I will be building the projects as they are assigned in The O
 <h3>8. Resume Maker</h3>
 <p> A resume making website built on React. Enter your details and generate a classy resume in pdf format.
 </p>
+
+<h3>9. Memory Card</h3>
+<p> A memory game where you are shown numerous tiles but you cannot click the same tile again. The tiles randomize with each clicks. Made with react functional components and hooks.
+</p>
