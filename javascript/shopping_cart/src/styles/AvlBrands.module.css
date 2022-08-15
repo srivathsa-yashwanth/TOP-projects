@@ -1,0 +1,21 @@
+
+.avl_brands{
+    display:flex;
+    background-color: rgba(59, 47, 70, 0.5);
+    max-width: 80vw;
+    gap: 40px;
+    flex-flow: row wrap;
+    padding: 5% 5%;
+    caret-color: transparent;
+    border-radius: 20px;
+}
+
+.smallTile{
+    max-height: 200px;
+    max-width: 200px;
+}
+
+.smallTile > img {
+    width: 100%;
+    height: 100%;
+}
