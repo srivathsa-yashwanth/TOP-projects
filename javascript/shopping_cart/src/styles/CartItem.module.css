@@ -1,0 +1,59 @@
+
+.CartItem{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    
+    background-color:rgba(248, 159, 87, 0.836);
+    padding:8px;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: 2px 2px rgb(31, 27, 27);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+
+}
+
+.ItemImage{
+    height: 80px;
+    width: 80px;
+}
+
+.ItemTitle{
+    font-size: 30px;
+    font-weight: 900;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.ItemSpecs{
+}
+
+.ItemPrice{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.ItemButton{
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.ItemButton:hover{
+    background-color: black;
+    color:white;
+}
+
+.ItemQuantity{
+    font-size: 30px;
+    font-weight: 700;
+    margin:25px 0px;
+}
+
+.ItemFinalPrice{
+    font-size: 30px;
+    font-weight: 700;
+    color:rgb(0, 0, 0);
+    font-family:'Times New Roman', Times, serif;
+}

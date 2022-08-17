@@ -10,7 +10,7 @@ const Home = () => {
         <div className={styles.whole}>
             <Navigation />
             <h1 className={styles.bigText}>The Motorcycle Heaven</h1>
-            <p className={styles.mediumText}>Order high end motorcycles to fill out your high end dealership</p>
+            <p className={styles.mediumText}>Order high end motorcycles in bulk to fill out your high end dealership</p>
             <p>Available Brands</p>
             <AvlBrands/>
         </div>

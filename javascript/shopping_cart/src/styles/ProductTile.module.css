@@ -1,0 +1,61 @@
+
+.productTile{
+    margin: 0;
+    background-color:rgb(103, 172, 240);
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.productName{
+    margin: 0;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.productSpecs{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.productImage{
+    height: 200px;
+    width: 300px;
+    margin: 0;
+}
+
+.productPrice{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0;
+
+}
+
+.addCartButton{
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 10px;
+    display: none;
+    font-size: 20px;
+    font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.addCartButton:hover{
+    background-color: rgb(9, 85, 42);
+    color:white;
+}
+
+.productTile:hover > .addCartButton, .addCartButton:hover{
+    display: block;
+}
