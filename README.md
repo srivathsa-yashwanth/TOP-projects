@@ -64,3 +64,7 @@ In this repository I will be building the projects as they are assigned in The O
 <h3>10. Shopping Cart</h3>
 <p> A basic shopping website where one can view a catalog of items and add them to a cart, change the quantity and checkout. Set up multiple pages using React Router.
 </p>
+
+<h3>11. Photo Tagging</h3>
+<p> A Rick and Morty themed where's waldo game :)
+</p>
