@@ -1,5 +1,7 @@
 module.exports = {
-
+  future: {
+    removeDeprecatedGapUtilities: true,
+  },
   purge: {
     content: ["./src/**/*.js", "./src/**/**/*.js"],
   },
@@ -8,7 +10,7 @@ module.exports = {
       red: theme("colors.red.primary"),
     }),
     colors: {
-      white: "#ffffff", 
+      white: "#ffffff",
       blue: {
         medium: "#005c98",
       },

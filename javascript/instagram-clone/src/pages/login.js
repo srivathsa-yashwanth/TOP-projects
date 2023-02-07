@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import firebaseContext from "../context/firebase";
+import * as ROUTES from "../constants/routes";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -12,7 +13,17 @@ const Login = () => {
   const [error, setError] = useState("");
   const isInvalid = password === "" || email === "";
 
-  const handleLogin = () => {};
+  const handleLogin = async (event) => {
+    event.preventDefault();
+    try {
+      await firebase.auth().signInWithEmailAndPassword(email, password);
+      navigate(ROUTES.DASHBOARD);
+    } catch (error) {
+      setEmail("");
+      setPassword("");
+      setError(error.message);
+    }
+  };
 
   useEffect(() => {
     document.title = "Login - Instagram";
@@ -34,7 +45,7 @@ const Login = () => {
           </h1>
           {error && <p className="mb-4 text-xs text-red-primary">{error}</p>}
 
-          <form onSubmit={handleLogin} method="POST">
+          <form onSubmit={handleLogin}>
             <input
               type="text"
               aria-label="Enter your email address"
@@ -52,7 +63,7 @@ const Login = () => {
             <button
               disabled={isInvalid}
               type="submit"
-              className={`bg-blue-500 text-white w-full rounded h-8 font-bold ${
+              className={`bg-blue-medium text-white w-full rounded h-8 font-bold ${
                 isInvalid && "opacity-50"
               }`}
             >
@@ -73,4 +84,4 @@ const Login = () => {
   );
 };
 
-export default Login; 
+export default Login;
