@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import firebaseContext from "../context/firebase";
 import UserContext from "../context/user";
 import * as ROUTES from "../constants/routes";
@@ -23,7 +23,7 @@ const Header = () => {
               </Link>
             </h1>
           </div>
-          <div className="text-gray-700 text-center flex items-center align-items ">
+          <div className="text-gray-700 text-center flex items-center align-items gap-2.5 ">
             {user ? (
               <>
                 <Link to={ROUTES.DASHBOARD}>
@@ -67,9 +67,30 @@ const Header = () => {
                     />
                   </svg>
                 </button>
+                <div className="flex items-center cursor-pointer">
+                  <Link to={`/p/${user.displayName}`}>
+                    <img
+                      src={"/images/avatars/default.jpg"}
+                      alt={`${user.displayName} profile pic`}
+                      className="rounded-full h-6 w-6 flex"
+                    />
+                  </Link>
+                </div>
               </>
             ) : (
-              <></>
+              <>
+                <Link to={ROUTES.LOGIN}>
+                  <button
+                    type="button"
+                    className="bg-blue-medium font-bold text-sm rounded text-white w-20 h-8"
+                  >
+                    Log in
+                  </button>
+                </Link>
+                <Link to={ROUTES.SIGNUP}>
+                  <button type="button" className="font-bold text-sm rounded text-blue-medium w-20 h-8">Sign up</button>
+                </Link>
+              </>
             )}
           </div>
         </div>
