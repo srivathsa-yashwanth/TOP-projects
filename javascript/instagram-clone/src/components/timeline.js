@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Timeline = () => {
   return (
-    <div>Timeline</div>
-  )
-}
+    <div className="container col-span-2">
+      <p>This is the timeline</p>
+    </div>
+  );
+};
 
-export default Timeline
+export default Timeline;
