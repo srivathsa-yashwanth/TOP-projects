@@ -11,16 +11,16 @@ const User = ({ username, fullName }) => {
   ) : (
     <Link
       to={`/p/${username}`}
-      className="grid grid-cols-4 gap-4 mb-6 items-center"
+      className="grid grid-cols-6 gap-1 mb-6 items-center justify-start"
     >
       <div className="flex items-center justify-between col-span-1">
         <img
           src={`images/avatars/${username}.jpg`}
-          className="rounded-full w-8 h-8 flex mr-3"
+          className="rounded-full w-8 h-8 flex mr-1"
           alt="profile"
         />
         </div>
-        <div className="col-span-3">
+        <div className="col-span-4">
           <p className="font-bold text-sm">{username}</p>
           <p className="text-sm">{fullName}</p>
         </div>
