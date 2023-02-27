@@ -26,7 +26,7 @@ const AddComment = ({ docId, comments, setComments, commentInput }) => {
         method="post"
         onSubmit={(e) =>
           comment.length >= 1 ? handleSubmitComment(e) : e.preventDefault()
-        }
+        }  
       >
         <input
           type="text"
