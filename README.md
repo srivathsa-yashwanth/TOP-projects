@@ -25,7 +25,6 @@ In this repository I will be building the projects as they are assigned in The O
 <h3>2. Admin Dashboard</h3>
 <p>A barebones admin-dashboard made with css grid</p>
 
-
 <h1>Javascript</h1>
 
 <h3>1. Library </h3>
@@ -67,4 +66,8 @@ In this repository I will be building the projects as they are assigned in The O
 
 <h3>11. Photo Tagging</h3>
 <p> A Rick and Morty themed where's waldo game :)
+</p>
+
+<h3>12. Instagram Clone</h3>
+<p> A clone of instagram made with React and Tailwind.
 </p>
