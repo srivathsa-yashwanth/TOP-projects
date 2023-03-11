@@ -71,3 +71,7 @@ In this repository I will be building the projects as they are assigned in The O
 <h3>12. Instagram Clone</h3>
 <p> A clone of instagram made with React and Tailwind.
 </p>
+
+<h1>Advanced CSS</h1>
+<h3>1. Responsive Portfolio</h3>
+<p> A responsive portfolio page that looks great on screens of all resolutions, made using responsive techniques learnt in the course like media queries. </p>

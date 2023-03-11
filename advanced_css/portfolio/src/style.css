@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#header {
+    min-height: 500px;
+    background: rgb(149, 149, 189);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-image {
+    max-width: 300px;
+    height: auto;
+}
+
+.header-info-container {
+    min-height: 250px;
+    max-width: 500px;
+    padding: 30px;
+    background-color: rgb(164, 203, 227);
+}
+
+#content{
+    margin: 30px 0px;
+}
+
+.projects-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding:5px 50px;
+    gap: 30px;
+}
+
+.project-grid-item {
+    min-height: 300px;
+    max-width: 250px;
+    background-color: rgb(154, 230, 154);
+    border-radius: 8px;
+}
+
+.project-image{
+    border-radius: 8px;
+    max-width: 250px;
+    height: auto;
+}
+
+.project-info{
+    padding:0px 20px;
+    
+}
+
+#footer{
+    background-color: rgb(113, 175, 175);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.footer-info-container{
+    min-height: 200px;
+    max-width: 300px;
+}
+
+.footer-image{
+    max-width: 300px;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    #header{
+        flex-direction: column;
+    }
+
+    #footer{
+        flex-direction: column;
+        gap: 25px; 
+    }
+    .projects-grid-container{
+        padding: 5px 5px;
+    }
+}
