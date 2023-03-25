@@ -2,10 +2,17 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+    <% for (msg of messages) { %>
+    <div class="message-box">
+      <h3><%= msg.name %></h3>
+      <p><%= msg.message %></p>
+      <p><%= msg.dateAdded.toDateString() %></p>
+    </div>
+    <% } %>
   </body>
 </html>
