@@ -22,7 +22,17 @@ const messages = [
 ];
 
 router.get("/", function (req, res, next) {
-  res.render("index", { title: "Message Board", messages:messages });
+  res.render("index", { title: "Message Board", messages: messages });
+});
+
+router.get("/new", function (req, res, next) {
+  res.render("form", { title: "New Message" });
+});
+
+router.post("/new", (req, res, next) => {
+  const { name, message } = req.body;
+  messages.push({ name, message, dateAdded: new Date() });
+  res.redirect("/");
 });
 
 module.exports = router;

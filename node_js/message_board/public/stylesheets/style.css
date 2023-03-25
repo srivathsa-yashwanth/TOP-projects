@@ -13,3 +13,10 @@ a {
   padding: 0px 30px;
   max-width: 500px;
 }
+
+.new-message-form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 250px;
+}

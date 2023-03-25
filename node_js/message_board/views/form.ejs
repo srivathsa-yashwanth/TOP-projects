@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title><%= title %></title>
+  </head>
+  <body>
+    <a href="/"><button>Home</button></a>
+    <h3>Send a message:</h3>
+    <div>
+      <form method="POST" action="/new" class="new-message-form">
+        <input type="text" required name="name" placeholder="Enter your name" />
+        <textarea
+          type="text"
+          required
+          name="message"
+          placeholder="Type your message"
+        ></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </body>
+</html>
