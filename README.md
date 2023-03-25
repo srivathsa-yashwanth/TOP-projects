@@ -79,3 +79,6 @@ In this repository I will be building the projects as they are assigned in The O
 <h1>Node Js</h1>
 <h3>1. Simple Node Site</h3>
 <p> A simple node site with multiple routes that server different html files based on the route. </p>
+
+<h3>2. Mini Message Board</h3>
+<p> A simple message board site where users can enter their name and message and have their messages shown on the message board. Made with Express and ejs</p>

@@ -3,20 +3,21 @@ var router = express.Router();
 
 /* GET home page. */
 
-const messages = [
+let messages = [
   {
-    name: "Yash",
-    message: "sup world",
+    name: "sharan",
+    message: "hello papalu",
     dateAdded: new Date(),
   },
+
   {
     name: "Sashe",
     message: "this is sashi",
     dateAdded: new Date(),
   },
   {
-    name: "sharan",
-    message: "hello papalu",
+    name: "Yash",
+    message: "sup world",
     dateAdded: new Date(),
   },
 ];
@@ -31,7 +32,7 @@ router.get("/new", function (req, res, next) {
 
 router.post("/new", (req, res, next) => {
   const { name, message } = req.body;
-  messages.push({ name, message, dateAdded: new Date() });
+  messages = [{ name, message, dateAdded: new Date() }, ...messages];
   res.redirect("/");
 });
 
