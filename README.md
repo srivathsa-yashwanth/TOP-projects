@@ -1,5 +1,7 @@
 In this repository I will be building the projects as they are assigned in The Odin Project.
 
+Deployment : <a href='https://srivathsa-yashwanth.github.io/odin_projects/' target='_blank'>Odin Projects</a>
+
 <h1>Foundations</h1>
 
 <h3>1. Recipe Book</h3>
