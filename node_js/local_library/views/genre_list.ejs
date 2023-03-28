@@ -1,0 +1,11 @@
+<%- include('layout') %>
+
+<h1><%= title %></h1>
+
+<ul>
+  <% if (genres) { %> <% for (const genre of genres) {%>
+  <li><a href="<%= genre.url %>"><%= genre.name %></a></li>
+  <% } %> <% } else { %>
+  <li>No genres are available in the library.</li>
+  <% } %>
+</ul>

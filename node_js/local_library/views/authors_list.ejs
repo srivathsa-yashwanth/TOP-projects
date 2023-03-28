@@ -1,0 +1,15 @@
+<%- include('layout') %>
+
+<h1><%= title %></h1>
+<ul>
+  <% if (authors) { %> <% for (const auth of authors) { %>
+  <li>
+    <a href="<%= auth.url  %>">
+      <span><%= auth.name %></span>
+    </a>
+    <span><%= auth.datesFormatted %></span>
+  </li>
+  <% } %> <% } else {%>
+  <li>No authors in this library</li>
+  <% } %>
+</ul>

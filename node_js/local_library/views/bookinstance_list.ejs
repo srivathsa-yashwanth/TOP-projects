@@ -1,0 +1,17 @@
+<%- include('layout') %>
+
+<h1><%= title%></h1>
+<ul class="bookinstances">
+  <% if (bookinstances.length > 0){ %> <% for (const ins of bookinstances) {%>
+  <li class="bookinstance">
+    <a href="<%= ins.url %>"><%= ins.book.title %></a>
+    <span><%= ins.imprint %> </span>
+    <span><%= ins.status %></span>
+    <% if (ins.status !== 'Available') { %>
+    <span><%= ins.dueBackFormatted %></span>
+    <% } %>
+  </li>
+  <% } %> <% } else {%>
+  <li>No copies of books are available.</li>
+  <% } %>
+</ul>
