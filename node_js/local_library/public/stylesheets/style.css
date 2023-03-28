@@ -23,5 +23,10 @@ a {
 .bookinstance {
   display: flex;
   flex-direction: column;
-  
+}
+
+.genre-books {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }

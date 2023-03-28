@@ -1,0 +1,35 @@
+<%- include('layout') %>
+
+<h1>Title: <%= book.title %></h1>
+<p>
+  <strong>Author: </strong>
+  <a href="<%= book.author.url %>"><%= book.author.name %></a>
+</p>
+<p><strong> Summary: </strong><%= book.summary %></p>
+<p><strong> ISBN: </strong><%= book.isbn %></p>
+<p>
+  <strong> Genres: </strong><% for (const g of book.genre) { %>
+  <span><a href="<%= g.url %>"><%= g.name %></a> | </span>
+  <% } %>
+</p>
+
+<div>
+  <h3>Copies</h3>
+  <ul class="bookinstances">
+    <% if (book_instances.length > 0){ %> <% for (const ins of book_instances)
+    {%>
+    <li class="bookinstance">
+      <span><strong>Status: </strong><%= ins.status %></span>
+      <span><strong>Imprint: </strong><%= ins.imprint %> </span>
+      <% if (ins.status !== 'Available') { %>
+      <span><strong>Due back: </strong><%= ins.dueBackFormatted %></span>
+      <% } %>
+      <span
+        ><strong>Id: </strong><a href="<%= ins.url %>"><%= ins._id %> </a></span
+      >
+    </li>
+    <% } %> <% } else {%>
+    <li>No copies of books are available.</li>
+    <% } %>
+  </ul>
+</div>

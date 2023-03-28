@@ -1,0 +1,24 @@
+<%- include('layout') %>
+
+<h1>ID: <%= bookinstance._id %></h1>
+
+<p>
+  <strong>Title: </strong>
+  <a href="<% bookinstance.book.url %>"><%= bookinstance.book.title %></a>
+</p>
+<p>
+  <strong>Imprint: </strong>
+  <%= bookinstance.imprint %>
+</p>
+
+<p>
+  <strong>Status: </strong>
+  <%= bookinstance.status %>
+</p>
+
+<% if (bookinstance.status !== 'Available') { %>
+<p>
+  <strong>Due by: </strong>
+  <%= bookinstance.dueBackFormatted %>
+</p>
+<% } %>
