@@ -4,6 +4,7 @@ var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 const mongoose = require("mongoose");
+require('dotenv').config()
 
 var indexRouter = require("./routes/index");
 var catalogRouter = require("./routes/catalog");
@@ -11,8 +12,7 @@ var catalogRouter = require("./routes/catalog");
 var app = express();
 
 mongoose.set("strictQuery", false);
-const mongoDb =
-  "mongodb+srv://yash:918spyder@local-library.drlrlxb.mongodb.net/local-library?retryWrites=true&w=majority";
+const mongoDb = process.env.mongodb_string;
 const connectMongo = async () => {
   await mongoose.connect(mongoDb);
 };
