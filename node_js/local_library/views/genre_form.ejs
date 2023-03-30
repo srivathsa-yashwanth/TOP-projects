@@ -1,0 +1,17 @@
+<%- include('layout') %>
+
+<h1><%= title %></h1>
+<form method="POST" action="">
+  <label for="genre_name">Genre: </label>
+  <input type="text" id="genre_name" name="name" placeholder="fantasy, fiction
+  etc" value= <%= genre? genre.name : "" %> >
+  <button type="submit">Submit</button>
+</form>
+
+<% if (errors) { %>
+<ul>
+  <% for (const e of errors) { %>
+  <li><%= e.msg %></li>
+  <% } %>
+</ul>
+<% } %>

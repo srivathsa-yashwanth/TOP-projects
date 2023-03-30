@@ -1,0 +1,30 @@
+<%- include('layout') %>
+
+<h1><%= title %></h1>
+<form method="POST" action="">
+  <label for="firstName">first Name: </label>
+  <input type="text" id="firstName" name="firstName" placeholder="Enter your
+  first name" value= <%= author? author.firstName : "" %> >
+
+  <label for="lastName">last name: </label>
+  <input type="text" id="lastName" name="lastName" placeholder="Enter your last
+  name" value= <%= author? author.lastName : "" %> >
+
+  <label for="dateOfBirth">Date of birth: </label>
+  <input type="date" id="dateOfBirth" name="dateOfBirth"
+  placeholder="dd/mm/yyyy" value= <%= author? author.dateOfBirth : "" %> >
+
+  <label for="dateOfDeath">Date of death: </label>
+  <input type="date" id="dateOfDeath" name="dateOfDeath"
+  placeholder="dd/mm/yyyy" value= <%= author? author.dateOfDeath : "" %> >
+
+  <button type="submit">Submit</button>
+</form>
+
+<% if (errors) { %>
+<ul>
+  <% for (const e of errors) { %>
+  <li><%= e.msg %></li>
+  <% } %>
+</ul>
+<% } %>

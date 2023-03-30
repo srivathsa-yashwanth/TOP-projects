@@ -1,0 +1,47 @@
+<%- include('layout') %>
+
+<h1><%= title %></h1>
+<form method="POST" action="">
+  <label for="title">Title: </label>
+  <input type="text" id="title" name="title" value= <%= book? book.title : "" %>
+  >
+
+  <label for="author">Author: </label>
+  <select name="author" id="author" placeholder="select an author">
+    <% for (const a of authors){ %> <% if (book){ %>
+    <option value="<%= a._id %>"
+      selected= "<%= a._id.toString() === book.author._id.toString() ?
+      'selected': false %>" >
+        <%= a.name  %>
+    </option>
+    <% } else { %> 
+        <option value=<%= a._id %>> <%= a.name  %></option>
+        <% } %>
+        <% } %>
+  </select>
+
+  <label for="summary">Summary: </label>
+  <textarea type="text" id="summary" name="summary"
+  placeholder="something about the book..." value= <%= book? book.summary : "" %> ></textarea>
+
+  <label for="isbn">Isbn: </label>
+  <input type="text" id="isbn" name="isbn"
+  placeholder="Enter Isbn" value= <%= book? book.isbn : "" %> >
+
+  <label for="">Genre:</label>
+  <% for ( const g of genres) { %>
+    <% console.log(g.checked === undefined ? false : 'checked') %>
+    <input type="checkbox" name="genre" id=<%= g._id %> value=<%= g._id %> <%= g.checked === undefined ? '' : 'checked'  %> >
+    <label for=<%= g._id  %>><%= g.name  %></label>
+<% } %>
+
+  <button type="submit">Submit</button>
+</form>
+
+<% if (errors) { %>
+<ul>
+  <% for (const e of errors) { %>
+  <li><%= e.msg %></li>
+  <% } %>
+</ul>
+<% } %>
