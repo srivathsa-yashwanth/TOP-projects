@@ -84,3 +84,6 @@ Deployment : <a href='https://srivathsa-yashwanth.github.io/odin_projects/' targ
 
 <h3>2. Mini Message Board</h3>
 <p> A simple message board site where users can enter their name and message and have their messages shown on the message board. Made with Express and ejs</p>
+
+<h3>3. Local Library</h3>
+<p> A library management system for your friendly neighbourhood local library, with the abilities to add, remove, update books, authors and genres. It stores the data on a MongoDB database on a cluster. Built with Express, Mongoose, EJS. </p>
