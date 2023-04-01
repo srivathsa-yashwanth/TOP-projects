@@ -87,3 +87,6 @@ Deployment : <a href='https://srivathsa-yashwanth.github.io/odin_projects/' targ
 
 <h3>3. Local Library</h3>
 <p> A library management system for your friendly neighbourhood local library, with the abilities to add, remove, update books, authors and genres. It stores the data on a MongoDB database on a cluster. Built with Express, Mongoose, EJS. </p>
+
+<h3>4. PC Parts Inventory</h3>
+<p> A place to keep track of your high end PC components. You can add items, categories and update/delete them as you see fit. It stores the data on a MongoDB database on a cluster. Built with Express, Mongoose, EJS. </p>
