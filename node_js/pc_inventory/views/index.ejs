@@ -2,10 +2,24 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+    <div style="display: flex; flex-direction: column">
+      <h3>all links:</h3>
+      <br />
+      <a href="/categories">/categories</a>
+      <a href="/manufacturers">/manufacturers</a>
+      <a href="/cpus">/cpus</a>
+      <a href="/gpus">/gpus</a>
+      <br />
+      <a href="/category/:id">/category/:id</a>
+      <a href="/manufacturer/:id">/manufacturer/:id</a>
+      <a href="/cpu/:id">/cpu/:id</a>
+      <a href="/gpu/:id">/gpu/:id</a>
+      <br />
+    </div>
   </body>
 </html>

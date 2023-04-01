@@ -7,7 +7,10 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 
 var indexRouter = require("./routes/index");
-var usersRouter = require("./routes/users");
+const categoryRouter = require('./routes/category')
+const manufacturerRouter = require('./routes/manufacturer')
+const cpuRouter = require('./routes/cpu')
+const gpuRouter = require('./routes/gpu')
 
 var app = express();
 
@@ -29,7 +32,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouter);
-app.use("/users", usersRouter);
+app.use("/category", categoryRouter);
+app.use("/manufacturer", manufacturerRouter);
+app.use("/cpu", cpuRouter);
+app.use("/gpu", gpuRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
