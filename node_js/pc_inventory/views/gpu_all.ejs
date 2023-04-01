@@ -6,9 +6,9 @@
     <% for (const gpu of gpus) { %>
         <div>
             <h4><a href="<%= gpu.url %>"><%= gpu.name %></a></h4>
-            <p><strong>Category:</strong> <%= gpu.category.name %></p>
+            <p><strong>Category:</strong>  <a href="<%= gpu.category.url %>"> <%= gpu.category.name %></a></p>
             <p><strong>Price:</strong> <%= gpu.price %>$</p>
-            <p><strong>Manufacturer:</strong> <%= gpu.manufacturer.name %></p>
+            <p><strong>Manufacturer:</strong>  <a href="<%= gpu.manufacturer.url %>"> <%= gpu.manufacturer.name %></a></p>
             <p><strong>Released in:</strong> <%= gpu.releaseDateFormatted %></p>
             <p><strong>Generation:</strong> <%= gpu.generation %></p>   
             <p><strong>Specs: </strong> 

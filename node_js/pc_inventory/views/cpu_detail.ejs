@@ -1,0 +1,20 @@
+<%- include('layout') %>
+
+<h3><%= title %></h3>
+
+<div>
+    <h4><a href="<%= cpu.url %>"><%= cpu.name %></a></h4>
+    <p><strong>Category:</strong> <a href="<%= cpu.category.url %>"> <%= cpu.category.name %></a></p>
+    <p><strong>Price:</strong> <%= cpu.price %>$</p>
+    <p><strong>Manufacturer:</strong>  <a href="<%= cpu.manufacturer.url %>"> <%= cpu.manufacturer.name %></a></p>
+    <p><strong>Released in:</strong> <%= cpu.releaseDateFormatted %></p>
+    <p><strong>Generation:</strong> <%= cpu.generation %></p>   
+    <p><strong>Specs: </strong> 
+        <% for (const spec in cpu.specs){ %>
+            <% if (cpu.specs.hasOwnProperty(spec) && cpu.specs[`${spec}`] ) {%>
+                <p><%= spec %> : <%= cpu.specs[`${spec}`] %></p>
+            <% } %>
+        <% } %></p>
+    <p><strong>Features: </strong><%= cpu.features.join(', ')  %></p>
+
+</div>

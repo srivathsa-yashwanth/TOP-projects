@@ -11,7 +11,13 @@ const getAllCategories = (req, res, next) => {
 };
 
 const getCategory = (req, res, next) => {
-  res.send("NOT IMPLEMENTED:");
+  Category.findById(req.params.id).exec((err, category) => {
+    if (err) return next(err);
+    res.render("category_detail", {
+      title: "Category",
+      category,
+    });
+  })
 };
 
 const createCategoryGet = (req, res, next) => {

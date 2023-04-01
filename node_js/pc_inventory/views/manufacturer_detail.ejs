@@ -1,0 +1,14 @@
+<%- include('layout') %>
+
+<h3><%= title %></h3>
+
+<div>
+  <h4><a href="<%= manufacturer.url %>"><%= manufacturer.name %></a></h4>
+  <p><strong>CEO:</strong> <%= manufacturer.leader %></p>
+  <p><strong>Market cap:</strong> <%= manufacturer.marketCap %></p>
+  <p><strong>Founded in:</strong> <%= manufacturer.foundedInFormatted %></p>
+  <p><strong>product Categories:</strong></p>
+  <% for (const cat of manufacturer.productCategories){ %>
+  <p><%= cat.name %></p>
+  <% } %>
+</div>

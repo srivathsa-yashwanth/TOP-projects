@@ -6,9 +6,9 @@
     <% for (const cpu of cpus) { %>
         <div>
             <h4><a href="<%= cpu.url %>"><%= cpu.name %></a></h4>
-            <p><strong>Category:</strong> <%= cpu.category.name %></p>
+            <p><strong>Category:</strong> <a href="<%= cpu.category.url %>"> <%= cpu.category.name %></a></p>
             <p><strong>Price:</strong> <%= cpu.price %>$</p>
-            <p><strong>Manufacturer:</strong> <%= cpu.manufacturer.name %></p>
+            <p><strong>Manufacturer:</strong>  <a href="<%= cpu.manufacturer.url %>"> <%= cpu.manufacturer.name %></a></p>
             <p><strong>Released in:</strong> <%= cpu.releaseDateFormatted %></p>
             <p><strong>Generation:</strong> <%= cpu.generation %></p>   
             <p><strong>Specs: </strong> 

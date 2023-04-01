@@ -14,7 +14,16 @@ const getAllCpus = (req, res, next) => {
 };
 
 const getCpu = (req, res, next) => {
-  res.send("NOT IMPLEMENTED:");
+  Cpu.findById(req.params.id)
+    .populate("category")
+    .populate("manufacturer")
+    .exec((err, cpu) => {
+      if (err) return next(err);
+      res.render("cpu_detail", {
+        title: "Cpu",
+        cpu,
+      });
+    });
 };
 
 const createCpuGet = (req, res, next) => {

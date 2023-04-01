@@ -14,7 +14,16 @@ const getAllGpus = (req, res, next) => {
 };
 
 const getGpu = (req, res, next) => {
-  res.send("NOT IMPLEMENTED:");
+    Gpu.findById(req.params.id)
+      .populate("category")
+      .populate("manufacturer")
+      .exec((err, gpu) => {
+        if (err) return next(err);
+        res.render("gpu_detail", {
+          title: "gpu",
+          gpu,
+        });
+      });
 };
 
 const createGpuGet = (req, res, next) => {
