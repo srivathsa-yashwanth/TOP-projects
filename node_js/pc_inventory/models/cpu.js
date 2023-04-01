@@ -28,7 +28,7 @@ cpuSchema.virtual("url").get(function () {
 
 cpuSchema.virtual("releaseDateFormatted").get(function () {
   const formatted = this.releaseDate
-    ? DateTime.fromJsDate(this.releaseDate).toLocaleString(DateTime.DATE_MED)
+    ? DateTime.fromJSDate(this.releaseDate).toLocaleString(DateTime.DATE_MED)
     : "";
   return formatted;
 });

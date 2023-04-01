@@ -1,5 +1,16 @@
+const Gpu = require("../models/gpu");
+
 const getAllGpus = (req, res, next) => {
-  res.send("NOT IMPLEMENTED:");
+  Gpu.find()
+    .populate("category")
+    .populate("manufacturer")
+    .exec((err, gpus) => {
+      if (err) return next(err);
+      res.render("gpu_all", {
+        title: "Gpus",
+        gpus,
+      });
+    });
 };
 
 const getGpu = (req, res, next) => {

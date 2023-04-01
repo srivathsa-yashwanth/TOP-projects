@@ -30,7 +30,7 @@ gpuSchema.virtual("url").get(function () {
 
 gpuSchema.virtual("releaseDateFormatted").get(function () {
   const formatted = this.releaseDate
-    ? DateTime.fromJsDate(this.releaseDate).toLocaleString(DateTime.DATE_MED)
+    ? DateTime.fromJSDate(this.releaseDate).toLocaleString(DateTime.DATE_MED)
     : "";
   return formatted;
 });

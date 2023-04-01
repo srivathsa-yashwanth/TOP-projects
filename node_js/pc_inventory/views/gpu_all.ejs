@@ -1,0 +1,22 @@
+<%- include('layout') %>
+
+<h3><%= title %></h3>
+
+<% if (gpus) { %> 
+    <% for (const gpu of gpus) { %>
+        <div>
+            <h4><a href="<%= gpu.url %>"><%= gpu.name %></a></h4>
+            <p><strong>Category:</strong> <%= gpu.category.name %></p>
+            <p><strong>Price:</strong> <%= gpu.price %>$</p>
+            <p><strong>Manufacturer:</strong> <%= gpu.manufacturer.name %></p>
+            <p><strong>Released in:</strong> <%= gpu.releaseDateFormatted %></p>
+            <p><strong>Generation:</strong> <%= gpu.generation %></p>   
+            <p><strong>Specs: </strong> 
+                <% for (const spec in gpu.specs){ %>
+                    <% if (gpu.specs.hasOwnProperty(spec) && gpu.specs[`${spec}`] ) {%>
+                        <p><%= spec %> : <%= gpu.specs[`${spec}`] %></p>
+                    <% } %>
+                <% } %></p>
+            <p><strong>Features: </strong><%= gpu.features.join(', ')  %></p>
+        </div>
+<% } %> <% } %>

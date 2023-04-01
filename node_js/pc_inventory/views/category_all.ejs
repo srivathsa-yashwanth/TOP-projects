@@ -1,0 +1,7 @@
+<%- include('layout') %>
+
+<h3><%= title %></h3>
+
+<% if (categories) { %> <% for (const category of categories) { %>
+<p><a href="<%= category.url %>"><%= category.name %></a></p>
+<% } %> <% } %>

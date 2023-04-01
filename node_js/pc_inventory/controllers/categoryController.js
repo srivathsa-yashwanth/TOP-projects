@@ -1,6 +1,15 @@
+const Category = require("../models/category");
+
 const getAllCategories = (req, res, next) => {
-  res.send("NOT IMPLEMENTED:");
+  Category.find({}).exec((err, categories) => {
+    if (err) return next(err)
+    res.render('category_all', {
+      title: 'Categories',
+      categories,
+    })
+  })
 };
+
 const getCategory = (req, res, next) => {
   res.send("NOT IMPLEMENTED:");
 };

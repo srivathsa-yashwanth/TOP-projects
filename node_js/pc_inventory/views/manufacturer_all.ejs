@@ -1,0 +1,16 @@
+<%- include('layout') %>
+
+<h3><%= title %></h3>
+
+<% if (manufacturers) { %> <% for (const manu of manufacturers) { %>
+<div>
+    <h4><a href="<%= manu.url %>"><%= manu.name %></a></h4>
+    <p><strong>CEO:</strong> <%= manu.leader %></p>
+    <p><strong>Market cap:</strong> <%= manu.marketCap %></p>
+    <p><strong>Founded in:</strong> <%= manu.foundedInFormatted %></p>
+    <p><strong>product Categories:</strong> </p>
+    <% for (const cat of manu.productCategories){ %>
+        <p><%= cat.name %></p>
+        <% } %>
+</div>
+<% } %> <% } %>

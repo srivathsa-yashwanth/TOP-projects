@@ -1,9 +1,18 @@
+const Manufacturer = require("../models/manufacturer");
 
-const getAllManufacturers = (req, res, next) => { res.send("NOT IMPLEMENTED:");}    
+const getAllManufacturers = (req, res, next) => {
+  Manufacturer.find({}).populate('productCategories').exec((err, mans) => {
+    if (err) return next(err);
+    res.render("manufacturer_all", {
+      title: "Manufacturers",
+      manufacturers: mans,
+    });
+  });
+};
+
 const getManufacturer = (req, res, next) => {
   res.send("NOT IMPLEMENTED:");
-};    
-
+};
 
 const createManufacturerGet = (req, res, next) => {
   res.send("NOT IMPLEMENTED:");

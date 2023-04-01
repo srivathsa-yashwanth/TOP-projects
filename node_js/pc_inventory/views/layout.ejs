@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-  </head>
-  <style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
   body{
     background-color:teal;
   }
@@ -14,12 +15,11 @@
     width: fit-content
   }
 </style>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+<body>
     <div style="display: flex; flex-direction: column">
       <h3>all links:</h3>
       <br />
+      <a href="/">/Home</a>
       <a href="/categories">/categories</a>
       <a href="/manufacturers">/manufacturers</a>
       <a href="/cpus">/cpus</a>
@@ -31,5 +31,5 @@
       <a href="/gpu/:id">/gpu/:id</a>
       <br />
     </div>
-  </body>
+</body>
 </html>

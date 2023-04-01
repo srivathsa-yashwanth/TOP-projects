@@ -1,5 +1,16 @@
+const Cpu = require("../models/cpu");
+
 const getAllCpus = (req, res, next) => {
-  res.send("NOT IMPLEMENTED:");
+  Cpu.find()
+    .populate("category")
+    .populate("manufacturer")
+    .exec((err, cpus) => {
+      if (err) return next(err);
+      res.render("cpu_all", {
+        title: "Cpus",
+        cpus,
+      });
+    });
 };
 
 const getCpu = (req, res, next) => {
